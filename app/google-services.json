@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "839045137187",
+    "project_id": "countryquizz-c1f65",
+    "storage_bucket": "countryquizz-c1f65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839045137187:android:0d193caf142769d0abc296",
+        "android_client_info": {
+          "package_name": "com.example.countryquizz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6CW-gIxpO-7YOZzFwLO1IZ6tJ_a0CFCQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

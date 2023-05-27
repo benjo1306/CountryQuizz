@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.countryquizz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".CountryQuizzApp"
+        android:allowBackup="true"
+        android:icon="@drawable/countryquizz"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/countryquizz"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CountryQuizz">
+        <activity android:name="com.example.countryquizz.ui.activities.SeeResultsActivity" />
+        <activity android:name="com.example.countryquizz.ui.activities.PlayQuizActivity" />
+        <activity android:name="com.example.countryquizz.ui.activities.PlayOrSeeResultsActivity" />
+        <activity android:name="com.example.countryquizz.ui.activities.LoginActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

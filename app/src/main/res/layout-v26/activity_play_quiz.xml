@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.PlayQuizActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:min="0"
+        android:max="5"/>
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/btn_first_answer"/>
+
+    <Button
+        android:id="@+id/btn_first_answer"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_second_answer"
+        app:layout_constraintBottom_toTopOf="@id/btn_third_answer"
+        app:layout_constraintTop_toBottomOf="@id/iv_flag"
+        android:text="Kongo"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btn_second_answer"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_first_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_flag"
+        app:layout_constraintBottom_toTopOf="@id/btn_fourth_answer"
+        android:text="Slovenia"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btn_third_answer"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_fourth_answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_first_answer"
+        android:text="France"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btn_fourth_answer"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_third_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_second_answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Belgium"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
